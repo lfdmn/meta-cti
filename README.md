@@ -1,13 +1,13 @@
 # meta-connecttech
 ## Overview
-Repository for ConnectTech BSP for Tegra carriers.
+Repository for ConnectTech carriers BSP for Tegra.
 
 This layer depends on [meta-tegra](https://github.com/madisongh/meta-tegra) layer and meta-boot2qt for the distro. 
 
-I tested with meta-tegra rocko-l4t-r28.2 commit 4aea5e3785dc400e31981467f475b54e652dbd67 with Astro carrier. 
+I tested with meta-tegra warrior-l4t-r32.2 commit ee72f83395d70349c90ed5271246b7478482f19a with Astro carrier. 
 
 ## Adding other machines for other carrier boards
-I recommand you to install NVIdia's jetpack, 3.2 for rocko-l4t-r28.2, and install ConnectTech BSP on top of it.
+I recommand you to install NVIdia's jetpack, 4.2 for warrior-l4t-r32.2, and install ConnectTech BSP on top of it.
 
 Flash your device with Jetpack ubuntu distro and check the HW works well, then you are sure you have selected the correct configuration.
 
@@ -17,7 +17,7 @@ Create a new machine in conf/machine and take an existing one as template. In th
 * UBOOT_MACHINE
 
 Example:
-astro-revG+.conf has 
+astro-revG+.conf has
 * DTB_FILE=tegra186-tx2-cti-ASG001-revG+.dtb
 * ODMDATA=0x6090000
 * SYSBOOTFILE=p2771-0000/extlinux.conf;
