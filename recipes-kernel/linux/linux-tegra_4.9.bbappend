@@ -8,7 +8,7 @@ SRC_URI = "git://${KERNEL_REPO};protocol=ssh;branch=${SRCBRANCH} \
           file://tegra186_cti_defconfig \
 "
 
-KERNEL_ROOTSPEC = "root=/dev/mmcblk${@uboot_var('devnum')}p${@uboot_var('distro_bootpart') rw rootwait
+KERNEL_ROOTSPEC = "root=/dev/mmcblk${@uboot_var('devnum')}p${@uboot_var('distro_bootpart') rw rootwait"
 
 do_configure_prepend(){
     mv ${WORKDIR}/tegra186_cti_defconfig ${WORKDIR}/defconfig
